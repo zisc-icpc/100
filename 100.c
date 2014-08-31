@@ -1,4 +1,4 @@
-//Time - 30:00
+//Time - 38:00
 //Compilation Error
 
 #include <stdio.h>
@@ -9,10 +9,12 @@ int clength(int n);
 void foo(int n);
 
 int main(){
-	int i,j,count, maxcl, clen;
+	int i,j,count, maxcl, clen, min, max;
 	maxcl = 0;
-	while(scanf("%i%i",&i,&j)){
-			for(count=i;count<=j;count++){
+	while(scanf("%d %d\n",&i,&j)==2){
+		min = (i<=j)*i + (i>j)*j;
+		max = (i<=j)*j + (i>j)*i;
+		for(count=min;count<=max;count++){
 			clen = clength(count);
 			if(clen>maxcl) maxcl = clen;
 		}
