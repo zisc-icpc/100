@@ -1,6 +1,5 @@
-//Time - 38:00
-//Compilation Error
-
+//Time: 45:00
+//Accepted
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -21,6 +20,7 @@ int main(){
 		printf("%d %d %d\n",i,j,maxcl);
 		maxcl = 0;
 	}
+	return(0);
 }
 
 void foo(int n){
